@@ -6,13 +6,17 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "generate": "vite-node src/generate-data.ts"
   },
   "devDependencies": {
+    "@types/node": "^24.5.2",
     "typescript": "~5.8.3",
-    "vite": "^7.1.7"
+    "vite": "^7.1.7",
+    "vite-node": "^3.2.4"
   },
   "dependencies": {
+    "@faker-js/faker": "^9.9.0",
     "faker": "^6.6.6",
     "zod": "^4.1.11"
   }
