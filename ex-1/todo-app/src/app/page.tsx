@@ -10,10 +10,10 @@ export default function HomePage() {
   const remainingTodos = useAtomValue(remainingTodosAtom);
 
   return (
-    <main className="min-h-screen bg-muted/30 py-8 px-4">
+    <main className="flex justify-center items-center min-h-screen bg-muted/30 py-8 px-4">
       <div className="max-w-md mx-auto">
-        <Card className="shadow-lg">
-          <CardHeader className="text-center pb-4">
+        <Card className="bg-transparent shadow-none border-0">
+          <CardHeader className="text-left">
             <CardTitle className="text-2xl font-semibold">Your To Do</CardTitle>
           </CardHeader>
           <CardContent className="space-y-6">
