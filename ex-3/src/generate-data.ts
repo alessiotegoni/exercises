@@ -1,7 +1,6 @@
 import { faker } from "@faker-js/faker";
-import { Currency, type Company } from "./schema/company";
+import { countryCodes, Currency, type Company } from "./schema/company";
 import * as fs from "fs";
-import { countryCodes } from "./constants/countryCodes";
 
 function generateCompany(): Company {
   const country = faker.helpers.arrayElement(countryCodes);

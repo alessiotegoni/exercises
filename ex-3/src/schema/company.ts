@@ -1,5 +1,7 @@
+import { countries } from "countries-list";
 import { z } from "zod";
-import { countryCodes } from "../constants/countryCodes";
+
+export const countryCodes = Object.keys(countries) as [string, ...string[]];
 
 export enum Currency {
   EUR = "€",
